@@ -12,7 +12,7 @@ class Abs_Actions:
             "method": "GET",
             "contentType": "application/json",
             "uri": "/v3/reporting/devices",
-            "queryString": "pageSize=500",
+            "queryString": "pageSize=500&agentStatus=A",
             "payload": {}
         }
         request_payload_data = {

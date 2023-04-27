@@ -5,7 +5,7 @@ abs_data = ABS.Abs_Actions.get_all()
 compNames = []
 
 for device in abs_data['data']:
-    print(device)
+    compNames.append(device['deviceName'])
 
 with open('compNameList', 'w') as wf:
     write = csv.writer(wf)
@@ -16,3 +16,5 @@ with open('compNameList', newline='') as rf:
     for col in read:
         for obj in col:
             print(obj)
+
+print(len(compNames))
